@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto</title>
+    <style>
+        #container{
+            height: 500px;
+            width: 500px;
+            border: solid 2px black;
+            text-align: center;
+        }
+        input{
+            background-color: blue;
+            color: white;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        button{
+            height: 80px;
+            width: 80px;
+            margin-top: 10px;
+            font-size: larger;
+            background-color: green;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div id ="container">
+        <h1>LottoApp</h1>
+        <input id ="one"type="text">
+        <input id ="two" type="text">
+        <input id = "three"type="text"><br>
+
+        <button id = "submit">Click</button>
+    </div>
+
+    <script>
+        num1= document.getElementById("one")
+        num2= document.getElementById("two")
+        num3 =document.getElementById("three")
+        sub =document.getElementById("submit")
+        sub.addEventListener("click", function(){
+            one()
+            two()
+            three()
+        })
+        function one(){
+            num1.value=Math.floor(Math.random()*10)
+        }
+        function two(){
+            num2.value=Math.floor(Math.random()*10)
+        }
+        function three(){
+            num3.value=Math.floor(Math.random()*10)
+        }
+       
+
+    </script>
+</body>
+</html>
